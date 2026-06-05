@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Emilio Gordillo Esparragoza — System engineer passionate about cloud and DevOps">
+  <title>Emilio Gordillo Esparragoza</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">EG</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#tech">Technologies</a></li>
+          <li><a href="#diplomas">Diplomas</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="section hero">
+      <div class="container hero-grid">
+        <!-- Profile photo placeholder -->
+        <div class="hero-img-wrapper">
+          <img
+            src="assets/img/pfp.jpg"
+            alt="Emilio Gordillo Esparragoza portrait"
+            class="hero-img"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23e5e7eb%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-family=%22sans-serif%22 font-size=%2232%22 text-anchor=%22middle%22 dy=%22.35em%22 fill=%22%239ca3af%22%3EEG%3C/text%3E%3C/svg%3E'"
+          >
+        </div>
+        <div class="hero-text">
+          <h1>Emilio Gordillo Esparragoza</h1>
+          <p class="hero-tagline">System engineer passionate about cloud and DevOps</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#links" class="btn btn-outline">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="card-grid">
+
+          <!-- Project 1: devtoolpack -->
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="assets/img/project-placeholder.svg"
+                alt="devtoolpack screenshot"
+                onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22 viewBox=%220 0 400 200%22%3E%3Crect fill=%22%23e5e7eb%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-family=%22sans-serif%22 font-size=%2216%22 text-anchor=%22middle%22 dy=%22.35em%22 fill=%22%239ca3af%22%3Edevtoolpack%3C/text%3E%3C/svg%3E'"
+              >
+            </div>
+            <div class="card-body">
+              <h3>devtoolpack</h3>
+              <p>A Python library for developer tooling pack.</p>
+              <a href="https://github.com/Emilio-Gordillo-Esparragoza/devtool-pack" target="_blank" rel="noopener noreferrer" class="card-link">View on GitHub &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 2: naim-simple -->
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="assets/img/project-placeholder.svg"
+                alt="naim-simple screenshot"
+                onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22 viewBox=%220 0 400 200%22%3E%3Crect fill=%22%23e5e7eb%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-family=%22sans-serif%22 font-size=%2216%22 text-anchor=%22middle%22 dy=%22.35em%22 fill=%22%239ca3af%22%3Enaim-simple%3C/text%3E%3C/svg%3E'"
+              >
+            </div>
+            <div class="card-body">
+              <h3>naim-simple</h3>
+              <p>Simple NAIM wrapper for missing data and training models — scikit-learn-like commands.</p>
+              <a href="https://github.com/Emilio-Gordillo-Esparragoza/naim-simple" target="_blank" rel="noopener noreferrer" class="card-link">View on GitHub &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 3: thinking-serverless -->
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="assets/img/project-placeholder.svg"
+                alt="thinking-serverless screenshot"
+                onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22 viewBox=%220 0 400 200%22%3E%3Crect fill=%22%23e5e7eb%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-family=%22sans-serif%22 font-size=%2216%22 text-anchor=%22middle%22 dy=%22.35em%22 fill=%22%239ca3af%22%3Ethinking-serverless%3C/text%3E%3C/svg%3E'"
+              >
+            </div>
+            <div class="card-body">
+              <h3>thinking-serverless</h3>
+              <p>Serverless architecture and patterns exploration.</p>
+              <a href="https://github.com/Emilio-Gordillo-Esparragoza/thinking-serverless" target="_blank" rel="noopener noreferrer" class="card-link">View on GitHub &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 4: monolith-to-microservices -->
+          <article class="card">
+            <div class="card-img">
+              <img
+                src="assets/img/project-placeholder.svg"
+                alt="monolith-to-microservices screenshot"
+                onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22 viewBox=%220 0 400 200%22%3E%3Crect fill=%22%23e5e7eb%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-family=%22sans-serif%22 font-size=%2216%22 text-anchor=%22middle%22 dy=%22.35em%22 fill=%22%239ca3af%22%3Emonolith-to-microservices%3C/text%3E%3C/svg%3E'"
+              >
+            </div>
+            <div class="card-body">
+              <h3>monolith-to-microservices</h3>
+              <p>Migration from monolith to microservices.</p>
+              <a href="https://github.com/Emilio-Gordillo-Esparragoza/monolith-to-microservices" target="_blank" rel="noopener noreferrer" class="card-link">View on GitHub &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TECHNOLOGIES & FRAMEWORKS SECTION ===== -->
+    <section id="tech" class="section">
+      <div class="container">
+        <h2 class="section-title">Technologies &amp; Frameworks</h2>
+
+        <h3 class="subsection-title">Technologies</h3>
+        <div class="badge-group">
+          <span class="badge">Python</span>
+          <span class="badge">PostgreSQL</span>
+          <span class="badge">AWS</span>
+          <span class="badge">Nginx</span>
+          <span class="badge">Terraform</span>
+          <span class="badge">Ansible</span>
+          <span class="badge">CI/CD</span>
+          <span class="badge">Jenkins</span>
+          <span class="badge">GitHub Actions</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Java</span>
+          <span class="badge">Rust</span>
+          <span class="badge">System Design</span>
+          <span class="badge">Design Thinking</span>
+        </div>
+
+        <h3 class="subsection-title">Frameworks &amp; Libraries</h3>
+        <div class="badge-group">
+          <span class="badge badge-framework">FastAPI</span>
+          <span class="badge badge-framework">PyTorch</span>
+          <span class="badge badge-framework">Spring Boot</span>
+          <span class="badge badge-framework">Flask</span>
+          <span class="badge badge-framework">NumPy</span>
+          <span class="badge badge-framework">Pandas</span>
+          <span class="badge badge-framework">Matplotlib</span>
+          <span class="badge badge-framework">Spark</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIPLOMAS / CERTIFICATIONS SECTION ===== -->
+    <section id="diplomas" class="section">
+      <div class="container">
+        <h2 class="section-title">Certifications &amp; Diplomas</h2>
+        <div class="card-grid">
+
+          <!-- 1. IBM Data Engineering -->
+          <article class="card card-diploma">
+            <div class="card-body">
+              <h3>IBM Data Engineering Professional Certificate</h3>
+              <p class="card-subtitle">IBM</p>
+              <a href="https://www.credly.com/earner/earned/share/fa7745ac-84c3-4647-809b-4b388458076f" target="_blank" rel="noopener noreferrer" class="card-link">View Credential &rarr;</a>
+            </div>
+          </article>
+
+          <!-- 2. AWS Academy Cloud Foundations (image placeholder) -->
+          <article class="card card-diploma">
+            <div class="card-body">
+              <h3>AWS Academy Cloud Foundations</h3>
+              <p class="card-subtitle">AWS Academy</p>
+              <p class="card-note">*Image coming soon</p>
+            </div>
+          </article>
+
+          <!-- 3. AWS CloudQuest Cloud Practitioner -->
+          <article class="card card-diploma">
+            <div class="card-body">
+              <h3>AWS CloudQuest: Cloud Practitioner</h3>
+              <p class="card-subtitle">AWS</p>
+              <a href="https://www.credly.com/earner/earned/share/452c1ad0-c107-4020-8628-f1e474ae25eb" target="_blank" rel="noopener noreferrer" class="card-link">View Credential &rarr;</a>
+            </div>
+          </article>
+
+          <!-- 4. Applied Software Engineering Fundamentals - IBM -->
+          <article class="card card-diploma">
+            <div class="card-body">
+              <h3>Applied Software Engineering Fundamentals</h3>
+              <p class="card-subtitle">IBM</p>
+              <a href="https://www.credly.com/earner/earned/share/ae02a41d-5137-4158-ae34-f6bd74b6935e" target="_blank" rel="noopener noreferrer" class="card-link">View Credential &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LANGUAGES SECTION ===== -->
+    <section id="languages" class="section section-light">
+      <div class="container">
+        <h2 class="section-title">Languages</h2>
+        <div class="lang-list">
+          <div class="lang-item">
+            <span class="lang-name">English</span>
+            <span class="lang-level">Fluent</span>
+          </div>
+          <div class="lang-item">
+            <span class="lang-name">Spanish</span>
+            <span class="lang-level">Native</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LINKS / CONTACT SECTION ===== -->
+    <section id="links" class="section">
+      <div class="container">
+        <h2 class="section-title">Links</h2>
+        <div class="links-grid">
+          <a href="https://github.com/Emilio-Gordillo-Esparragoza" target="_blank" rel="noopener noreferrer" class="link-card">
+            <span class="link-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </span>
+            <span class="link-label">GitHub</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/emilio-gordillo-esparragoza-948267397/" target="_blank" rel="noopener noreferrer" class="link-card">
+            <span class="link-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </span>
+            <span class="link-label">LinkedIn</span>
+          </a>
+
+          <!-- Highlighted referral link -->
+          <a href="https://www.metapool.app/stake/?referralCode=645886" target="_blank" rel="noopener noreferrer" class="link-card link-card-highlight">
+            <span class="link-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </span>
+            <span class="link-label">Staking Referral</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Emilio Gordillo Esparragoza. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
