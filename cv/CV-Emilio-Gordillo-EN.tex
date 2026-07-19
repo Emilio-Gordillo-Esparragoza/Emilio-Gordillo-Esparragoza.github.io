@@ -1,17 +1,18 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage[margin=0.55in]{geometry}
+\usepackage[margin=0.48in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{parskip}
 
-\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{8pt}{4pt}
-\setlist[itemize]{noitemsep, topsep=1pt, leftmargin=1.1em}
-\setlength{\parskip}{2pt}
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.1em, itemsep=1pt}
+\setlength{\parskip}{1pt}
 
 \begin{document}
+\fontsize{9.5pt}{11.8pt}\selectfont
 
 \begin{center}
     {\LARGE\textbf{Emilio Gordillo Esparragoza}}\\[3pt]
@@ -23,12 +24,12 @@
 \end{center}
 
 \section*{Professional Summary}
-Aspiring Data Engineer and Backend Developer with hands-on experience in Python, SQL/PostgreSQL, and cloud-native AWS architectures. Currently building production bus-route systems with TypeScript, Supabase, and PostgreSQL while earning a Software Engineering degree. Proven ability to design data preprocessing pipelines, automate DevOps tooling, and implement serverless event-driven patterns (Lambda, SQS, EventBridge, Terraform). Eager to contribute to ETL/ELT pipelines, APIs, and reliable backend services in a data-driven team.
+Aspiring Data Engineer and Backend Developer with hands-on experience in Python, SQL/PostgreSQL, and AWS. Builds production transit systems with TypeScript, Supabase, and PostgreSQL while earning a Software Engineering degree. Designs data pipelines, DevOps automation, and serverless patterns (Lambda, SQS, EventBridge, Terraform). Eager to contribute to ETL/ELT pipelines, APIs, and reliable backend services.
 
 \section*{Technical Skills}
 \textbf{Languages:} Python, SQL, TypeScript/JavaScript, PLpgSQL, Java, Rust\\
-\textbf{Data \& Analytics:} PostgreSQL, Pandas, NumPy, Apache Spark, scikit-learn, statistical analysis (ANOVA, t-tests)\\
-\textbf{Cloud \& Backend:} AWS (Lambda, SQS, EventBridge, serverless), REST APIs, Supabase, FastAPI, Flask\\
+\textbf{Data \& Analytics:} PostgreSQL, Pandas, NumPy, Apache Spark, scikit-learn, Streamlit, statistical analysis (ANOVA, t-tests)\\
+\textbf{Cloud \& Backend:} AWS (Lambda, SQS, EventBridge, serverless), REST APIs, Supabase, FastAPI, Flask, React\\
 \textbf{DevOps \& Tools:} Docker, Terraform, CI/CD (GitHub Actions, Jenkins), Ansible, Nginx, Git
 
 \section*{Experience}
@@ -36,35 +37,40 @@ Aspiring Data Engineer and Backend Developer with hands-on experience in Python,
 \textbf{Software Developer} \hfill June 2026 -- Present\\
 \href{https://www.enrutate.com/}{Enrutate} --- Culiac\'an \& Guasave transit platform\\
 \begin{itemize}
-    \item Engineer and maintain a production bus route tracking application serving multiple cities using TypeScript/JavaScript, Supabase, and PostgreSQL (PLpgSQL).
-    \item Implement real-time data updates and server-side validations to improve route accuracy and user experience for daily riders.
-    \item Collaborate on backend data models and queries that support reliable tracking and operational consistency.
+    \item Engineer and maintain a production bus route tracking app for multiple cities using TypeScript/JavaScript, Supabase, and PostgreSQL (PLpgSQL).
+    \item Implement real-time updates and server-side validations that improve route accuracy for daily riders.
 \end{itemize}
 
 \section*{Projects}
 
+\textbf{\href{https://physcientific.onrender.com/}{phyScientific}} --- Statistical Lab for Physics Simulations (\href{https://github.com/Emilio-Gordillo-Esparragoza/phyScientific}{GitHub})\\
+\begin{itemize}
+    \item Built a feature-extraction pipeline and Streamlit dashboard for The Well \texttt{active\_matter} sims; ANOVA, effect sizes, and Tukey HSD on control factors.
+\end{itemize}
+
+\textbf{\href{https://dev-market-insights.vercel.app}{dev-market-insights}} --- Job-Market Aggregator (\href{https://github.com/Emilio-Gordillo-Esparragoza/dev-market-insights}{GitHub})\\
+\begin{itemize}
+    \item Engineered a FastAPI + React aggregator that ingests multi-source job listings, normalizes stack/seniority/salary, and surfaces tech-demand insights.
+\end{itemize}
+
 \textbf{\href{https://github.com/Emilio-Gordillo-Esparragoza/thinking-serverless}{thinking-serverless}} --- AWS Serverless \& Event-Driven Architecture\\
 \begin{itemize}
-    \item Built deployable reference projects covering EventBridge fan-out, SQS/Lambda async workflows, FIFO queues, and dead-letter queues (DLQ).
-    \item Provisioned infrastructure with Terraform and documented scalability, idempotency, and fault-tolerance patterns for distributed cloud systems.
+    \item Built Terraform-provisioned EventBridge/SQS/Lambda workflows with FIFO queues and DLQs; documented idempotency and fault-tolerance.
 \end{itemize}
 
 \textbf{\href{https://github.com/Emilio-Gordillo-Esparragoza/naim-simple}{naim-simple}} --- ML Missing-Data Pipeline (Python)\\
 \begin{itemize}
-    \item Developed a scikit-learn-style fit/predict/save/load API that wraps NAIM imputation for tabular datasets.
-    \item Abstracted complex preprocessing into reusable components to accelerate model training workflows.
+    \item Developed a scikit-learn-style fit/predict/save/load API wrapping NAIM imputation for tabular preprocessing.
 \end{itemize}
 
 \textbf{\href{https://github.com/Emilio-Gordillo-Esparragoza/devtool-pack}{devtool-pack}} --- Cross-Platform DevOps Environment Automation\\
 \begin{itemize}
-    \item Built a modular Python package that automates installation of Terraform, AWS CLI, Docker, kubectl, and related tooling across Windows, macOS, and Linux.
-    \item Reduced multi-tool environment setup from hours to a single command for reproducible developer workstations.
+    \item Automated Terraform, AWS CLI, Docker, and kubectl setup across Windows/macOS/Linux in a single command.
 \end{itemize}
 
 \textbf{\href{https://github.com/Emilio-Gordillo-Esparragoza/PonyFlow}{PonyFlow}} --- Multi-Agent Code Generation System\\
 \begin{itemize}
-    \item Designed a self-correcting multi-agent Python pipeline (planner $\rightarrow$ coder $\rightarrow$ reviewer) using local LLMs with LangChain/Ollama.
-    \item Delivered a React + Tauri (Rust) desktop UI to monitor workflows with minimal external dependencies.
+    \item Designed a self-correcting multi-agent Python pipeline (LangChain/Ollama) with a React + Tauri desktop UI.
 \end{itemize}
 
 \section*{Education}
