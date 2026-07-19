@@ -1,0 +1,83 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=0.48in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.1em, itemsep=1pt}
+\setlength{\parskip}{1pt}
+
+\begin{document}
+\fontsize{9.5pt}{11.8pt}\selectfont
+
+\begin{center}
+    {\LARGE\textbf{Emilio Gordillo Esparragoza}}\\[3pt]
+    Ingeniero de Datos y Desarrollador Backend\\[4pt]
+    \href{mailto:emilio.gordillo.dev@gmail.com}{emilio.gordillo.dev@gmail.com}
+    $\cdot$ M\'exico
+    $\cdot$ \href{https://github.com/Emilio-Gordillo-Esparragoza}{github.com/Emilio-Gordillo-Esparragoza}
+    $\cdot$ \href{https://www.linkedin.com/in/emilio-gordillo-esparragoza-948267397/}{LinkedIn}
+\end{center}
+
+\section*{Perfil Profesional}
+Aspirante a Ingeniero de Datos y Desarrollador Backend con experiencia en Python, SQL/PostgreSQL y arquitecturas AWS. Construye sistemas productivos de rutas con TypeScript, Supabase y PostgreSQL mientras cursa Ingenier\'ia de Software (UAG). Dise\~na pipelines de datos, automatiza entornos DevOps e implementa patrones serverless (Lambda, SQS, EventBridge, Terraform). Busca contribuir en pipelines ETL/ELT, APIs y servicios backend.
+
+\section*{Habilidades T\'ecnicas}
+\textbf{Lenguajes:} Python, SQL, TypeScript/JavaScript, PLpgSQL, Java, Rust\\
+\textbf{Datos y An\'alisis:} PostgreSQL, Pandas, NumPy, Apache Spark, scikit-learn, an\'alisis estad\'istico (ANOVA, pruebas t)\\
+\textbf{Nube y Backend:} AWS (Lambda, SQS, EventBridge, serverless), APIs REST, Supabase, FastAPI, Flask\\
+\textbf{DevOps y Herramientas:} Docker, Terraform, CI/CD (GitHub Actions, Jenkins), Ansible, Nginx, Git
+
+\section*{Experiencia}
+
+\textbf{Desarrollador de Software} \hfill Junio 2026 -- Presente\\
+\href{https://www.enrutate.com/}{Enrutate} --- Plataforma de transporte en Culiac\'an y Guasave\\
+\begin{itemize}
+    \item Desarrolla y mantiene una aplicaci\'on productiva de seguimiento de rutas para Culiac\'an y Guasave con TypeScript/JavaScript, Supabase y PostgreSQL (PLpgSQL).
+    \item Implementa actualizaciones en tiempo real y validaciones del servidor para mejorar precisi\'on de rutas y experiencia de usuarios.
+\end{itemize}
+
+\section*{Proyectos}
+
+\textbf{\href{https://github.com/Emilio-Gordillo-Esparragoza/thinking-serverless}{thinking-serverless}} --- AWS Serverless y Arquitectura Orientada a Eventos\\
+\begin{itemize}
+    \item Proyectos desplegables con fan-out EventBridge, flujos SQS/Lambda, colas FIFO/DLQ; infraestructura con Terraform e idempotencia.
+\end{itemize}
+
+\textbf{\href{https://github.com/Emilio-Gordillo-Esparragoza/naim-simple}{naim-simple}} --- Pipeline ML para Datos Faltantes (Python)\\
+\begin{itemize}
+    \item API estilo scikit-learn (fit/predict/save/load) para imputaci\'on NAIM y preprocesamiento reutilizable en datasets tabulares.
+\end{itemize}
+
+\textbf{\href{https://github.com/Emilio-Gordillo-Esparragoza/devtool-pack}{devtool-pack}} --- Automatizaci\'on Cross-Platform de Entornos DevOps\\
+\begin{itemize}
+    \item Paquete Python que instala Terraform, AWS CLI, Docker y kubectl en Windows/macOS/Linux, reduciendo setup de horas a un comando.
+\end{itemize}
+
+\textbf{\href{https://github.com/Emilio-Gordillo-Esparragoza/PonyFlow}{PonyFlow}} --- Sistema Multiagente de Generaci\'on de C\'odigo\\
+\begin{itemize}
+    \item Pipeline multiagente auto-correctivo (LangChain/Ollama) con UI de escritorio React + Tauri (Rust).
+\end{itemize}
+
+\section*{Educaci\'on}
+\textbf{Universidad Aut\'onoma de Guadalajara (UAG)} \hfill 2026 -- Presente\\
+Ingenier\'ia de Software
+
+\section*{Certificaciones}
+IBM Data Engineering Professional Certificate $\cdot$
+AWS Academy Cloud Foundations $\cdot$
+AWS CloudQuest: Cloud Practitioner $\cdot$
+AWS Academy Generative AI Foundations $\cdot$
+IBM Applied Software Engineering Fundamentals
+
+\section*{Idiomas}
+Ingl\'es --- Fluido \quad|\quad Espa\~nol --- Nativo
+
+\end{document}

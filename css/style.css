@@ -182,7 +182,9 @@ ul {
 
 .hero-img-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
 }
 
 .hero-img {
@@ -192,6 +194,29 @@ ul {
   object-fit: cover;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
   border: 3px solid #ffffff;
+}
+
+.hero-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.hero-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #6b7280;
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.hero-social-link:hover {
+  color: #2563eb;
+  background-color: #eff6ff;
 }
 
 .hero-text h1 {
@@ -205,7 +230,14 @@ ul {
 .hero-tagline {
   font-size: 1.15rem;
   color: #6b7280;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-summary {
+  font-size: 0.98rem;
+  color: #4b5563;
+  max-width: 36rem;
+  margin-bottom: 1.75rem;
 }
 
 .hero-cta {
@@ -369,56 +401,24 @@ ul {
   font-weight: 500;
 }
 
-/* ===== LINKS (contact / referral) ===== */
-.links-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.25rem;
+/* ===== RESUME / CV DOWNLOAD ===== */
+.resume-intro {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  max-width: 36rem;
 }
 
-.link-card {
+.resume-actions {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  padding: 2rem 1.5rem;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  border: 1px solid #f3f4f6;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  color: #1f2937;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
 }
 
-.link-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-  color: #2563eb;
-}
-
-.link-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.link-label {
+.resume-contact {
   font-size: 0.95rem;
-  font-weight: 600;
-}
-
-/* Highlighted referral card */
-.link-card-highlight {
-  background: linear-gradient(135deg, #eef2ff, #ffffff);
-  border-color: #2563eb;
-  color: #2563eb;
-}
-
-.link-card-highlight:hover {
-  background: #2563eb;
-  border-color: #2563eb;
-  color: #ffffff;
+  color: #6b7280;
 }
 
 /* ===== FOOTER ===== */
@@ -487,6 +487,11 @@ ul {
     justify-content: center;
   }
 
+  .hero-summary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .section-title {
     font-size: 1.5rem;
   }
@@ -520,6 +525,6 @@ ul {
 #tech,
 #diplomas,
 #languages,
-#links {
+#resume {
   scroll-margin-top: 80px;
 }
