@@ -334,6 +334,22 @@ ul {
   gap: 0.25rem;
 }
 
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+}
+
+.card-link-secondary {
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.card-link-secondary:hover {
+  color: #2563eb;
+}
+
 .card-subtitle {
   font-size: 0.85rem;
   color: #9ca3af;
